@@ -1,0 +1,17 @@
+// font family
+$family: "Public Sans", sans-serif;
+// size
+$size: 18px;
+// colors
+$text-color: hsl(233, 8%, 62%);// p and a
+$green-color: hsl(136, 65%, 51%);// left gradient and hover color
+$blue-color: hsl(192, 70%, 51%);// right gradient
+$white: hsl(0, 0%, 100%);
+$sec1-bg: hsl(0, 0%, 98%);// and gallery-container
+$heading-color: hsl(233, 26%, 24%);// and footer bg
+$sec2-bg: hsl(220, 16%, 96%);
+$attr-color: hsl(228, 45%, 44%);
+
+// break point
+$small: '(min-width: 768px)';
+$mobile: '(max-width: 767px)';

@@ -1,0 +1,108 @@
+.head-section {
+    background-color: $sec1-bg;
+    @media #{$small} {
+        padding: 30px 50px;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url("../images/bg-intro-desktop.svg");
+        background-position: 143% -30%;
+        background-size: 66% 74%;
+        .info {
+            width: 50%;
+        }
+        .image {
+            width: 47%;
+        }
+    }
+    @media #{$mobile} {
+        flex-direction: column;
+        background-image: url("../images/bg-intro-mobile.svg");
+        background-position: 143% -30%;
+        background-size: 100% 74%;
+        .info {
+            order: 2;
+            button {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .image {
+            order: 1;
+        }
+    }
+    padding: 20px 20px;
+    display: flex;
+    background-repeat: no-repeat;
+    .image {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+//midle section
+.midle{
+    @media #{$small} {
+        padding: 30px 50px;
+        text-align: left;
+        .why-container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 15px;
+        }
+    }
+    @media #{$mobile} {}
+    padding: 20px 20px;
+    text-align: center;
+    background-color: $sec2-bg;
+    .why-container {
+        div {
+            img {
+                width: 30px;
+                height: 30px;
+            }
+            h3 {
+                margin-top: 10px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+}
+.gallery-container {
+    background-color: $sec1-bg;
+    @media #{$small} {
+        padding: 30px 50px;
+        h2 {
+            text-align: left !important;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 15px;
+            img {
+                height: 130px;
+            }
+        }
+    }
+    padding: 20px 20px;
+    h2 {
+        text-align: center;
+    }
+    .gallery {
+        img {
+            width: 100%;
+        }
+        .information {
+            background-color: $white;
+            padding: 20px 15px;
+            height: auto;
+            h3 {
+                font-size: 18px;
+                word-break: keep-all;
+            }
+        }
+    }
+
+}

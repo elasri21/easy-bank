@@ -1,14 +1,13 @@
-const openBtn = document.querySelector('.hamburger')
-const closeBtn = document.querySelector('.close')
-const list = document.querySelector('#page header ul')
-list.style.display = 'none'
-openBtn.addEventListener('click', function(){
-    this.style.display = 'none'
-    closeBtn.style.display = 'block'
-    list.style.display = 'block'
-})
-closeBtn.addEventListener('click', function(){
-    this.style.display = 'none'
-    openBtn.style.display = 'block'
-    list.style.display = 'none'
-})
+const menu = document.querySelector('.menu');
+const closeMenu = document.querySelector('.close');
+const nav = document.querySelector('nav');
+menu.addEventListener('click', function(){
+    this.style.display = 'none';
+    closeMenu.style.display = 'block';
+    nav.style.display = 'block';
+});
+closeMenu.addEventListener('click', function(){
+    this.style.display = 'none';
+    nav.style.display = 'none';
+    menu.style.display = 'block';
+});
